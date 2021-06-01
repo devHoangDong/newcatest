@@ -74,18 +74,18 @@ h2.active {
 
 /* FORM TYPOGRAPHY*/
 
-input[type=button], input[type=submit], input[type=reset]  {
-  background-color: #56baed;
-  border: none;
-  color: white;
+input[type=button], input[type=submit], input[type=reset], button  {
+  background-color: #fff;
+  border: solid 1px gainsboro;
+  color: #000;
   padding: 15px 80px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   text-transform: uppercase;
   font-size: 13px;
-  -webkit-box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
-  box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+  -webkit-box-shadow: 0 10px 30px 0 rgba(194, 194, 194, 0.4);
+  box-shadow: 0 10px 30px 0 rgba(194, 194, 194, 0.4);
   -webkit-border-radius: 5px 5px 5px 5px;
   border-radius: 5px 5px 5px 5px;
   margin: 5px 20px 40px 20px;
@@ -96,8 +96,8 @@ input[type=button], input[type=submit], input[type=reset]  {
   transition: all 0.3s ease-in-out;
 }
 
-input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover  {
-  background-color: #39ace7;
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover, button:hover  {
+  background-color: gainsboro;
 }
 
 input[type=button]:active, input[type=submit]:active, input[type=reset]:active  {
@@ -229,7 +229,8 @@ input[type=text]:placeholder {
   bottom: -10px;
   width: 0;
   height: 2px;
-  background-color: #56baed;
+  background-color: #fff;
+  border: solid 1px #56baed;
   content: "";
   transition: width 0.2s;
 }

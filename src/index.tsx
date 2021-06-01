@@ -1,13 +1,12 @@
-import * as React from 'react'
-import ReactDOM from 'react-dom'
-import 'bootstrap/dist/css/bootstrap.min.css';  
-import { ReactKeycloakProvider } from '@react-keycloak/web'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import * as React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import { AppRouter } from './routes';
+import * as serviceWorker from './serviceWorker';
+import { GoogleAuthProvider } from './GoogleAuthen';
 
-import keycloak from './keycloak'
-import { AppRouter } from './routes'
-import * as serviceWorker from './serviceWorker'
 
-import './index.css'
 
 const eventLogger = (event: unknown, error: unknown) => {
   console.log('onKeycloakEvent', event, error)
@@ -20,13 +19,9 @@ const tokenLogger = (tokens: unknown) => {
 
 ReactDOM.render(
   <React.StrictMode>
-    <ReactKeycloakProvider
-      authClient={keycloak}
-      onEvent={eventLogger}
-      onTokens={tokenLogger}
-    >
-      <AppRouter />
-    </ReactKeycloakProvider>
+      <GoogleAuthProvider>
+        <AppRouter />
+      </GoogleAuthProvider>
   </React.StrictMode>,
   document.getElementById('root')
 )

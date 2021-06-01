@@ -33,6 +33,7 @@
     "react-scripts": "4.0.3",
     "react-slick": "^0.28.1",
     "react-swipeable-views": "^0.13.9",
+    "react-use-googlelogin": "^0.12.5",
     "reactstrap": "^8.9.0",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",

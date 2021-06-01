@@ -4,12 +4,14 @@ import { Redirect } from 'react-router-dom';
 import axios from 'axios';
 import { useHistory } from "react-router-dom";
 import s from './LoginGG.module.scss'
+import { useGoogleAuth } from '../GoogleAuthen/index';
 
 export default function LoginGG() {
     let history = useHistory();
     const handleClick = () => {
          history.push('/home')
     }
+    const { signIn } = useGoogleAuth();
     const signup = (res) => { 
            const googleresponse = {
              Name: res.profileObj.name,
@@ -46,15 +48,11 @@ export default function LoginGG() {
                         <input type="text" id="login" className={`${s.fadeIn} ${s.second}`} name="login" placeholder="login" />
                         <input type="text" id="password" className={`${s.fadeIn} ${s.third}`} name="login" placeholder="password" />
                         <input type="submit" className={`${s.fadeIn} ${s.fourth}`} Value="Log In" />
+                        
                         </form>
                         {/* Remind Passowrd */}
                         <div id={s.formFooter}>
-                            <GoogleLogin
-                               clientId="117400138061-qmmhcm296ol3tqa2tc0eq60a5j553c27.apps.googleusercontent.com"
-                               buttonText="Login with Google"
-                               onSuccess={responseGoogle}
-                               onFailure={responseGoogle} >
-                            </GoogleLogin>
+                            <button onClick={signIn}><i class="fab fa-google"></i> Log In with Google</button>
                         </div>
                     </div>
                 </div>

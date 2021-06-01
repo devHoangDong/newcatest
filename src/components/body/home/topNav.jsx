@@ -5,17 +5,13 @@ import {
   } from 'react-router-dom';
   import * as React from 'react'
   import { useCallback } from 'react'
-  import { useKeycloak } from '@react-keycloak/web'
   import { useAxios } from '../../../utils/hooks'
+  import { useGoogleAuth } from '../../../GoogleAuthen';
+
   
 const d = format(new Date(), 'do MMMM yyyy')
 export default function TopNav() {
-  const { keycloak } = useKeycloak()
-  const axiosInstance = useAxios('http://localhost:5000') // see https://github.com/panz3r/jwt-checker-server for a quick implementation
-  const callApi = useCallback(() => {
-    !!axiosInstance.current && axiosInstance.current.get('/jwt/decode')
-  }, [axiosInstance])
-
+  const { signOut } = useGoogleAuth();
     return (
         <div className="topNav">
             <div className="topNav__left">
@@ -30,9 +26,9 @@ export default function TopNav() {
                   <div className="thumb__editAccount">
                       <p>Sửa thông tin</p>
                       <p>Đổi mật khẩu</p>
-                      {!!keycloak?.authenticated && (<p onClick={() => keycloak.logout()}>
+                      <p onClick={() => signOut()}>
                         Đăng xuất
-                      </p>)}
+                      </p>
                   </div>
                 </div>
               </div>
