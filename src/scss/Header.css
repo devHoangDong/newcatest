@@ -1,0 +1,71 @@
+.header {
+  width: 15%;
+  border-bottom: 1px solid #ccc;
+  background-color: grey;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("https://thumbs.dreamstime.com/z/lock-digital-background-cyber-security-internet-security-security-concept-lock-icon-circuit-board-technology-133647796.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://thumbs.dreamstime.com/z/lock-digital-background-cyber-security-internet-security-security-concept-lock-icon-circuit-board-technology-133647796.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.header__logo {
+  padding: 2rem 0 1rem 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5)));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  color: #797676;
+}
+
+.header__logo p {
+  margin: .5rem 2rem;
+}
+
+.header__logo .logo {
+  background-image: url("https://tongdaicks.vn/wp-content/uploads/2020/12/logo-newca-1.jpg");
+  border-radius: 50%;
+  background-position: center;
+  background-size: contain;
+  height: 3rem;
+  width: 3rem;
+  text-align: left;
+  margin-left: 2rem;
+}
+
+.header__nav {
+  text-align: left;
+  margin: 1rem;
+  border-radius: .5rem;
+}
+
+.header__nav a {
+  color: #fff;
+  display: block;
+  padding: 1rem;
+}
+
+.header__nav:hover {
+  background-color: #fff;
+}
+
+.header__nav:hover a {
+  color: black;
+  text-decoration: none;
+}
+
+.ant-affix {
+  -webkit-box-shadow: 0 8px 6px -6px #ccc;
+          box-shadow: 0 8px 6px -6px #ccc;
+}
+
+.icon-cart {
+  border-radius: 50%;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 21px;
+  vertical-align: top;
+  background: #cc0000 !important;
+  color: #ffffff;
+}
+/*# sourceMappingURL=Header.css.map */

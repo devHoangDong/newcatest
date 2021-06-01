@@ -1,0 +1,258 @@
+.drawal-money {
+  margin-top: 2rem;
+  height: 100%;
+}
+
+.drawal-money table, .drawal-money tr, .drawal-money th, .drawal-money td {
+  border-collapse: collapse;
+}
+
+.drawal-money table th, .drawal-money table td, .drawal-money tr th, .drawal-money tr td, .drawal-money th th, .drawal-money th td, .drawal-money td th, .drawal-money td td {
+  padding: 25px;
+  text-align: center;
+}
+
+.drawal-money table {
+  border: solid 1px #D5DDE6;
+  border-collapse: separate;
+  border-radius: .2rem;
+}
+
+.drawal-money__number {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.drawal-money__button button {
+  font-size: 1rem;
+  border-radius: .5rem;
+  margin-top: 20px;
+  height: 40px;
+}
+
+.drawal-money__confirm {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.drawal-money__confirm--input {
+  width: 350px;
+  margin-right: 15px;
+  border-radius: 10px;
+  height: 35px;
+  line-height: 35px;
+  padding: 0px 10px;
+  outline: none;
+}
+
+.drawal-money__confirm--button {
+  border-radius: 10px;
+}
+
+.drawal-money .drawal-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.drawal-money .drawal-container .commission {
+  padding: 2rem;
+  background-color: #fff;
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+          box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  position: relative;
+  border-radius: .15rem;
+  height: 10rem;
+  margin-bottom: 2rem;
+}
+
+.drawal-money .drawal-container .commission .commissionText {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: #a09f9f;
+  font-size: 1rem;
+  text-align: right;
+}
+
+.drawal-money .drawal-container .commission .commissionNumber {
+  color: #555;
+  position: absolute;
+  top: 3rem;
+  right: 1rem;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: right;
+}
+
+.drawal-money .drawal-container .commission .moneyIcon {
+  position: absolute;
+  background-color: #1CAFAD;
+  padding: 1rem;
+  top: -1rem;
+  left: 1rem;
+  z-index: 2;
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+          box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  border-radius: .2rem;
+  font-size: 3rem;
+  color: #fff;
+  width: 6rem;
+  height: 6rem;
+}
+
+.drawal-money .drawal-container .commission .moneyIcon i {
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.drawal-money .drawal-container .ballance {
+  padding: 2rem;
+  background-color: #fff;
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+          box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  position: relative;
+  border-radius: .15rem;
+  height: 10rem;
+}
+
+.drawal-money .drawal-container .ballance .ballanceIcon {
+  position: absolute;
+  background-color: #FCC56E;
+  padding: 1rem;
+  top: -1rem;
+  left: 1rem;
+  z-index: 2;
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+          box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  border-radius: .2rem;
+  font-size: 3rem;
+  color: #fff;
+  width: 6rem;
+  height: 6rem;
+}
+
+.drawal-money .drawal-container .ballance .ballanceIcon i {
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.drawal-money .drawal-container .ballance .ballanceText {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: #a09f9f;
+  font-size: 1rem;
+  text-align: right;
+}
+
+.drawal-money .drawal-container .ballance .ballanceNumber {
+  color: #555;
+  position: absolute;
+  top: 3rem;
+  right: 1rem;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: right;
+}
+
+.drawal-money .drawal-money__button {
+  text-align: center;
+}
+
+.drawal-money .drawal-money__button button {
+  margin: 0 auto;
+  background-color: #fff;
+  color: #000;
+  padding: 0.5rem 2rem;
+}
+
+.drawal-money .drawal-money__button button:hover {
+  background-color: gray;
+  color: #fff;
+}
+
+@media only screen and (min-device-width: 1024px) {
+  .drawal-container .commission {
+    width: 30%;
+    margin-right: 4rem;
+  }
+  .drawal-container .commission .commissionText {
+    top: 1rem;
+    right: 1rem;
+    font-size: 1rem;
+  }
+  .drawal-container .commission .commissionNumber {
+    top: 3rem;
+    right: 1rem;
+    font-size: 2rem;
+  }
+  .drawal-container .commission .moneyIcon {
+    padding: 1rem;
+    top: -1rem;
+    left: 1rem;
+    font-size: 3rem;
+  }
+  .drawal-container .ballance {
+    width: 30%;
+    padding: 2rem;
+    margin-right: 1rem;
+    border-radius: .15rem;
+  }
+  .drawal-container .ballance .ballanceIcon {
+    padding: 1rem;
+    top: -1rem;
+    left: 1rem;
+  }
+  .drawal-container .ballance .ballanceText {
+    top: 1rem;
+    right: 1rem;
+    font-size: 1rem;
+  }
+  .drawal-container .ballance .ballanceNumber {
+    top: 3rem;
+    right: 1rem;
+    font-size: 2rem;
+  }
+  .drawal-money__button {
+    margin-top: 2rem;
+  }
+  .drawal-money__button button {
+    margin: 0 auto;
+    padding: 0.5rem 2rem;
+  }
+}
+
+@media only screen and (max-device-width: 1024px) {
+  .drawal-container {
+    width: 100%;
+  }
+  .drawal-container .commission {
+    width: 100%;
+    margin-right: 0;
+  }
+  .drawal-container .ballance {
+    width: 100%;
+    margin-right: 0;
+  }
+  .drawal-money__button {
+    margin-top: 2rem;
+  }
+  .drawal-money__button button {
+    margin: 0 auto;
+    padding: 0.5rem 2rem;
+  }
+}
+/*# sourceMappingURL=DrawalMoney.css.map */

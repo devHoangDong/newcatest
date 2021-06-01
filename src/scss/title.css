@@ -1,0 +1,24 @@
+.title {
+  background-color: #cc0000;
+}
+
+.title__content {
+  width: 90%;
+  height: 40px;
+  line-height: 40px;
+  margin: auto;
+  color: #fff;
+}
+
+.title__content__left a {
+  color: #fff;
+}
+
+.title__content__left ul li {
+  float: left;
+}
+
+.title__content__left ul li span {
+  margin-right: 10px;
+}
+/*# sourceMappingURL=title.css.map */

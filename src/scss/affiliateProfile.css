@@ -1,0 +1,38 @@
+.profileBank {
+  width: 60%;
+  margin: auto;
+}
+
+.profileBank .ant-card-head {
+  color: black !important;
+  font-weight: 500;
+  border: 1px solid #ccc;
+  font-size: 17px;
+}
+
+.profileBank .ant-card-body {
+  color: black;
+  border: 1px solid #ccc;
+}
+
+.profileBank__content {
+  font-size: 15px;
+  color: black !important;
+}
+
+.profileBank__content i {
+  margin-right: 10px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.profileBank__content span {
+  margin-left: 10px;
+}
+
+.profileBank .loading {
+  width: 100vw;
+  height: 100vh;
+  background: #0000002e;
+}
+/*# sourceMappingURL=affiliateProfile.css.map */

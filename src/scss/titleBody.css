@@ -1,0 +1,19 @@
+.titleBody {
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #ccc;
+  font-weight: 700;
+  font-size: 23px;
+  margin-bottom: 15px;
+  margin-left: 2rem;
+}
+
+.dathang {
+  background: white;
+  border: 1px solid #ebebeb;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 10px #0000002b;
+          box-shadow: 4px 4px 10px #0000002b;
+}
+/*# sourceMappingURL=titleBody.css.map */

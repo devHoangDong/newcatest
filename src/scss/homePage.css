@@ -1,0 +1,38 @@
+.homePage__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.homePage__container .chart1__container {
+  width: calc(60% - 2rem);
+  background-color: #fff;
+  margin-top: 1rem;
+  border-radius: 1rem;
+}
+
+.homePage__container .ballance__container {
+  width: calc(40% - 2rem);
+  margin-top: 1rem;
+}
+
+.homePage__container .topCategory__container {
+  width: calc(25% - 1rem);
+}
+
+.homePage__container .recentOrder__container {
+  width: calc(35% - 2.5rem);
+}
+
+.homePage__container .analytic__container {
+  width: calc(40% - 2rem);
+  background-color: #fff;
+  margin-top: 1rem;
+  border-radius: 1rem;
+}
+/*# sourceMappingURL=homePage.css.map */

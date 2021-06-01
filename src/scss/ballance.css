@@ -1,0 +1,213 @@
+.ballance__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.ballance__container .income {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: calc(50% - .5rem);
+  height: calc(50% - .5rem);
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.ballance__container .income__icon {
+  font-size: 1.5rem;
+  display: block;
+  color: #ccc;
+}
+
+.ballance__container .income__content {
+  bottom: 1rem;
+}
+
+.ballance__container .income__content__text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: .5rem;
+}
+
+.ballance__container .income__content__total {
+  font-size: .75rem;
+  color: gray;
+  font-weight: bold;
+}
+
+.ballance__container .income__content__total p {
+  display: inline;
+}
+
+.ballance__container .income__content__total span {
+  color: green;
+  float: right;
+}
+
+.ballance__container .expence {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: calc(50% - .5rem);
+  height: calc(50% - .5rem);
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.ballance__container .expence__icon {
+  font-size: 1.5rem;
+  display: block;
+  color: #ccc;
+}
+
+.ballance__container .expence__content {
+  bottom: 1rem;
+}
+
+.ballance__container .expence__content__text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: .5rem;
+}
+
+.ballance__container .expence__content__total {
+  font-size: .75rem;
+  color: gray;
+  font-weight: bold;
+}
+
+.ballance__container .expence__content__total p {
+  display: inline;
+}
+
+.ballance__container .expence__content__total span {
+  color: green;
+  float: right;
+}
+
+.ballance__container .affilate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: calc(50% - .5rem);
+  height: calc(50% - .5rem);
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.ballance__container .affilate__icon {
+  font-size: 1.5rem;
+  display: block;
+  color: #ccc;
+}
+
+.ballance__container .affilate__content {
+  bottom: 1rem;
+}
+
+.ballance__container .affilate__content__text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: .5rem;
+}
+
+.ballance__container .affilate__content__total {
+  font-size: .75rem;
+  color: gray;
+  font-weight: bold;
+}
+
+.ballance__container .affilate__content__total p {
+  display: inline;
+}
+
+.ballance__container .affilate__content__total span {
+  color: green;
+  float: right;
+}
+
+.ballance__container .order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: calc(50% - .5rem);
+  height: calc(50% - .5rem);
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.ballance__container .order__icon {
+  font-size: 1.5rem;
+  display: block;
+  color: #ccc;
+}
+
+.ballance__container .order__content {
+  bottom: 1rem;
+}
+
+.ballance__container .order__content__text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: .5rem;
+}
+
+.ballance__container .order__content__total {
+  font-size: .75rem;
+  color: gray;
+  font-weight: bold;
+}
+
+.ballance__container .order__content__total p {
+  display: inline;
+}
+
+.ballance__container .order__content__total span {
+  color: green;
+  float: right;
+}
+/*# sourceMappingURL=ballance.css.map */

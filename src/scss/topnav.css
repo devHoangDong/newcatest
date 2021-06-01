@@ -1,0 +1,103 @@
+.topNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1rem 1rem 0 1rem;
+}
+
+.topNav__left__title {
+  font-size: 1.5rem;
+  color: #000;
+  font-weight: bold;
+}
+
+.topNav__right {
+  width: 10rem;
+}
+
+.topNav__right__avatar {
+  height: 4rem;
+  line-height: 4rem;
+  position: relative;
+}
+
+.topNav__right__avatar img {
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+}
+
+.topNav__right__avatar i:hover {
+  cursor: pointer;
+}
+
+.topNav__right__avatar .topNav__right__userName {
+  float: right;
+  position: relative;
+  margin-right: .5rem;
+  color: #A6A6A6;
+}
+
+.topNav__right__avatar .topNav__right__userName .thumb__editAccount {
+  position: fixed;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  text-align: left;
+  right: 2rem;
+  padding: .5rem;
+  display: none;
+  visibility: hidden;
+  z-index: 999;
+  height: 6rem;
+  line-height: 2.5rem;
+  background-color: #fff;
+  color: #979797;
+  border-radius: .25rem;
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+          box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+}
+
+.topNav__right__avatar .topNav__right__userName .thumb__editAccount a {
+  text-decoration: none;
+  color: #A6A6A6;
+  text-align: left;
+}
+
+.topNav__right__avatar .topNav__right__userName .thumb__editAccount a p {
+  border-radius: .2rem;
+  padding: 0 .5rem;
+}
+
+.topNav__right__avatar .topNav__right__userName .thumb__editAccount a:hover p {
+  background-color: #9228AC;
+  color: #fff;
+}
+
+.topNav__right__avatar .topNav__right__userName .thumb__editPassword:hover {
+  background-color: #fff;
+}
+
+.topNav__right__avatar:hover .thumb__editAccount {
+  display: block;
+  visibility: visible;
+}
+
+.topNav__right__avatar:hover .thumb__editPassword {
+  z-index: 999;
+  display: block;
+  visibility: visible;
+}
+
+.topNav__right .userName i {
+  font-size: 1rem;
+}
+/*# sourceMappingURL=topnav.css.map */

@@ -1,0 +1,147 @@
+.editAccount {
+  background-color: #EEEEEE;
+  height: 100%;
+}
+
+.editAccount label {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.editAccount input {
+  border-radius: 6px;
+}
+
+.editAccount__left {
+  background-color: #FFFFFF;
+  position: relative;
+  border-radius: .5rem;
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+          box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+}
+
+.editAccount__left form {
+  width: 95%;
+  margin: 4rem auto 0;
+}
+
+.editAccount__left .editAccount__title {
+  position: absolute;
+  right: 50%;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  color: #fff;
+  font-weight: normal;
+  border-radius: .2rem;
+  background: -webkit-gradient(linear, left top, right top, from(#A945BB), to(#9026AB));
+  background: linear-gradient(to right, #A945BB, #9026AB);
+  width: 95%;
+  text-align: left;
+  padding: .5rem 1rem;
+}
+
+.editAccount__left .editAccount__title span {
+  font-weight: lighter;
+}
+
+.editAccount__left__groupButton {
+  text-align: center;
+}
+
+.editAccount__left .btnSubmit {
+  border-radius: .75rem;
+  background-color: #9026AB !important;
+  cursor: pointer;
+}
+
+.editAccount__left .btnSubmit:hover {
+  background-color: #c268d9 !important;
+}
+
+.editAccount__right {
+  background-color: #FFFFFF;
+  position: relative;
+  height: 15rem;
+  border-radius: .5rem;
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+          box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  text-align: center;
+}
+
+.editAccount__right--avatar {
+  position: absolute;
+  border-radius: 50%;
+  right: 50%;
+  -webkit-transform: translate(50%, -30%);
+          transform: translate(50%, -30%);
+  background-color: #FFFFFF;
+  background-image: url(https://svgshare.com/i/WVM.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.editAccount__right--avatar img {
+  width: 8rem;
+  height: 8rem;
+  margin: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 1px solid #d9d9d9;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.editAccount__right--btn {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.editAccount__right--btn button {
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #9026AB;
+}
+
+.editAccount__right--btn button:hover {
+  background-color: #c268d9;
+}
+
+@media only screen and (min-device-width: 600px) {
+  .btnSubmit {
+    width: 15rem;
+    height: 4rem;
+  }
+}
+
+@media only screen and (max-device-width: 768px) {
+  .editAccount__left {
+    margin: 4rem 1rem 0 1rem;
+  }
+  .editAccount__right {
+    margin: 4rem 1rem 0 1rem;
+  }
+}
+
+@media only screen and (min-device-width: 769px) {
+  .editAccount__left {
+    margin: 4rem 1rem 0 2rem;
+  }
+  .editAccount__right {
+    margin: 4rem 2rem 0 1rem;
+  }
+}
+
+@media only screen and (max-device-width: 600px) {
+  .editAccount__row {
+    display: block;
+  }
+  .btnSubmit {
+    width: 10rem;
+    height: 2rem;
+  }
+}
+/*# sourceMappingURL=EditAccount.css.map */

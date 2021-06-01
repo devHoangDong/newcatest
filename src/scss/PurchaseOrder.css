@@ -1,0 +1,46 @@
+.purchaseOrder__container {
+  background-color: #EEEEEE;
+  position: absolute;
+  margin-top: 0;
+  width: 100%;
+}
+
+.purchaseOrder__container .purchaseOrder {
+  position: relative;
+  background-color: #fff;
+  margin: 4rem 2rem 0 2rem;
+  border-radius: .5rem;
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+          box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+}
+
+.purchaseOrder__container .purchaseOrder .purchaseOrder__title {
+  position: absolute;
+  right: 50%;
+  -webkit-transform: translate(50%, -30%);
+          transform: translate(50%, -30%);
+  color: #fff;
+  font-weight: normal;
+  border-radius: .2rem;
+  background: -webkit-gradient(linear, left top, right top, from(#A945BB), to(#9026AB));
+  background: linear-gradient(to right, #A945BB, #9026AB);
+  width: 95%;
+  text-align: left;
+  padding: .5rem 0;
+  -webkit-box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(156, 39, 176, 0.4);
+          box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(156, 39, 176, 0.4);
+}
+
+.purchaseOrder__container .purchaseOrder .purchaseOrder__title span {
+  font-weight: lighter;
+}
+
+.purchaseOrder__container .purchaseOrder table {
+  margin-top: 4rem;
+}
+
+.purchaseOrder__container .purchaseOrder__table2--titleTable {
+  font-size: 18px;
+  font-weight: 600;
+}
+/*# sourceMappingURL=PurchaseOrder.css.map */

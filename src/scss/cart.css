@@ -1,0 +1,307 @@
+.cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.cart .totalCost__container .totalCost {
+  width: 80%;
+  border: solid 2px #E5E5E5;
+  text-align: center;
+  background-color: #Fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cart .totalCost__container .totalCost .totalCost__number {
+  height: 6rem;
+  line-height: 6rem;
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-right: 2rem;
+}
+
+.cart .totalCost__container .totalCost .totalCost__text {
+  margin-left: 1rem;
+  height: 6rem;
+  line-height: 6rem;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.cart .totalCost__container .totalCost__button {
+  margin: 1rem auto 0;
+  border-radius: none !important;
+  width: 80%;
+}
+
+.cart .totalCost__container .totalCost__button a {
+  width: 100%;
+  border-radius: none !important;
+  text-transform: uppercase;
+}
+
+.cart .totalCost__container .totalCost__button a .dathang {
+  border-radius: 0 !important;
+}
+
+.cart .totalCost__container .payment {
+  width: 80%;
+  margin: 1rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cart .totalCost__container .payment .paymentItem {
+  width: 19%;
+  height: 2rem;
+  margin-right: .25rem;
+  background-color: #F9F4F4;
+}
+
+.cart .totalCost__container .payment .paymentItem img {
+  height: 2rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 0 auto;
+}
+
+.cart table {
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+          box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  table-layout: fixed;
+  text-align: center;
+  margin: 3rem 2rem 0;
+  display: inline-table;
+}
+
+.cart table img {
+  width: 150px;
+  height: 100px;
+  margin: auto;
+}
+
+.cart table th {
+  font-size: 18px;
+  font-weight: 600;
+  border-bottom: none !important;
+}
+
+.cart table thead {
+  background-color: #9026AB;
+  display: table-header-group;
+  color: #fff;
+}
+
+.cart table tbody {
+  background-color: #fff;
+}
+
+.cart table tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.cart table td, .cart table th {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cart__table__number {
+  width: 12rem;
+}
+
+.cart__table__number input {
+  border: solid 1px #ccc;
+  margin-right: .25rem;
+  border-radius: .25rem;
+  width: 4rem;
+  font-size: 1rem;
+  text-align: center;
+  height: 2rem;
+}
+
+.cart__table__number input:focus {
+  outline: none !important;
+  border: solid 1px #000;
+}
+
+.cart__table__number button {
+  width: 2rem;
+  height: 2rem;
+  margin-right: .25rem;
+  font-size: 1rem;
+  font-weight: normal;
+  border: solid 1px #ccc;
+}
+
+.cart__table__number button:hover {
+  background-color: #d8d7d7;
+}
+
+.cart__table__number--increment {
+  border-radius: .25rem;
+}
+
+.cart__table__number--decrement {
+  border-radius: .25rem;
+}
+
+.cart__table--price {
+  font-weight: 600;
+}
+
+.cart__table--delete {
+  margin-top: 1rem;
+}
+
+.cart__table--delete i {
+  font-size: 100%;
+}
+
+.cart__table--delete a span {
+  text-decoration: underline;
+}
+
+.cart__table--delete button {
+  width: 75px;
+  height: 35px;
+  border-radius: 10px;
+  background-color: #9026AB;
+  border: none;
+}
+
+.cart__table--delete button:hover {
+  background-color: #9026AB;
+}
+
+.cart__table--delete:hover {
+  color: #d8d7d7;
+}
+
+@media only screen and (max-width: 768px) and (min-width: 601px) {
+  .cart .tableContainer {
+    width: 100%;
+  }
+  .cart .totalCost__container {
+    width: 55%;
+    margin: 0 auto;
+  }
+  .cart .totalCost__container .totalCost {
+    margin: 1.5rem auto 0;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .cart .tableContainer {
+    width: 60%;
+  }
+  .cart .totalCost__container {
+    width: 30%;
+  }
+  .cart .totalCost__container .totalCost {
+    margin: 3rem auto 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .totalCost__container {
+    width: 100%;
+  }
+  .totalCost__container .totalCost {
+    margin: 1.5rem auto 0;
+  }
+}
+
+.orderContainer {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.orderContainer .order {
+  -webkit-transform: translateY(4rem);
+          transform: translateY(4rem);
+  background-color: #fff;
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+          box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  padding: 2rem;
+  position: relative;
+  border-radius: .5rem;
+}
+
+.orderContainer .order .orderTitle {
+  position: absolute;
+  right: 50%;
+  top: 0;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  color: #fff;
+  font-weight: normal;
+  border-radius: .2rem;
+  background: -webkit-gradient(linear, left top, right top, from(#A945BB), to(#9026AB));
+  background: linear-gradient(to right, #A945BB, #9026AB);
+  width: 95%;
+  padding: 1.5rem 1rem;
+  text-align: left;
+}
+
+.orderContainer .order .orderTitle h2 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.orderContainer .order form {
+  margin-top: 1rem;
+}
+
+.orderContainer .order button {
+  height: 38px;
+  color: #fff;
+  background-color: #9026AB !important;
+  border: none;
+}
+
+.orderContainer .order button:hover {
+  background-color: #c268d9 !important;
+}
+
+.orderContainer .order a {
+  position: absolute;
+  font-size: 1rem;
+  background-color: #9026AB !important;
+  padding: 9.5px 10px;
+  color: #fff;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.orderContainer .order a:hover {
+  background-color: #c268d9 !important;
+  text-decoration: none;
+  color: #fff;
+}
+/*# sourceMappingURL=cart.css.map */
