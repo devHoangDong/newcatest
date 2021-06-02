@@ -10,11 +10,14 @@
         }
     }
     &__right {
-        width: 10rem;
         &__avatar {
             height: 4rem;
             line-height: 4rem;
             position: relative;
+            .userAvatar {
+              width: 2rem;
+              transform: translateX(-.5rem);
+            }
           img {
             border-radius: 50%;
             width: 2rem;
@@ -39,7 +42,7 @@
                 text-align: left;
                 p {
                   border-radius: .2rem;
-                  padding: 0 .5rem;
+                  padding: 0 .75rem;
                 }
               }
               p {
@@ -72,6 +75,10 @@
             .thumb__editAccount {
               display: block;
               visibility: visible;
+              p:hover {
+                background-color: gray;
+                color: #fff;
+              }
             }
             .thumb__editPassword {
               z-index: 999;

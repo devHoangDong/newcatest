@@ -5,13 +5,14 @@ import { useGoogleAuth } from "../GoogleAuthen";
 const PrivateRoute = ({component: Component, ...rest}) => {
 
     const { isSignedIn } = useGoogleAuth();
-
+    const loginToken = localStorage.getItem('userGG');
+    
     return (
         <div>
             <Route {...rest} render={props => (
-                isSignedIn ?
-                <Component {...props} />: 
-                <Redirect exact from="/home" to="/login" />
+                loginToken ?
+                (<Component {...props} />) : 
+                <Redirect to="/login" />
             )} />
         </div>
     );

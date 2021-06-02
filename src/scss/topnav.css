@@ -57,7 +57,6 @@
   display: none;
   visibility: hidden;
   z-index: 999;
-  height: 6rem;
   line-height: 2.5rem;
   background-color: #fff;
   color: #979797;
@@ -74,7 +73,11 @@
 
 .topNav__right__avatar .topNav__right__userName .thumb__editAccount a p {
   border-radius: .2rem;
-  padding: 0 .5rem;
+  padding: 0 .75rem;
+}
+
+.topNav__right__avatar .topNav__right__userName .thumb__editAccount p {
+  cursor: pointer;
 }
 
 .topNav__right__avatar .topNav__right__userName .thumb__editAccount a:hover p {
@@ -89,6 +92,11 @@
 .topNav__right__avatar:hover .thumb__editAccount {
   display: block;
   visibility: visible;
+}
+
+.topNav__right__avatar:hover .thumb__editAccount p:hover {
+  background-color: gray;
+  color: #fff;
 }
 
 .topNav__right__avatar:hover .thumb__editPassword {

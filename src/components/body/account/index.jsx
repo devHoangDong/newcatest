@@ -40,6 +40,7 @@ function Body() {
   }, [load])
   // //
   let { path, url } = useRouteMatch();
+  console.log(url)
   const showMenu = () => {
     setToggle(!toggle);
     if (toggle) {

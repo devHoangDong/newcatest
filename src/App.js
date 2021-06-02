@@ -22,25 +22,6 @@ const App = () => {
         <Header/>
         <Body/>
       </div>
-      {/* <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/account">account</Link>
-          </li>
-        </ul>
-
-        <hr />
-
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/account">
-            <Account />
-          </Route>
-        </Switch> */}
       <Footer/>
       <BackTop>
         <div className="backTop"><i className="fas fa-arrow-up" style={{fontSize: '25px'}}></i></div>

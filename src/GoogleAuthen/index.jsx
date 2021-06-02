@@ -1,14 +1,17 @@
-import React from 'react'
-import { useGoogleLogin } from 'react-use-googlelogin'
+import React from 'react';
+import { useGoogleLogin } from 'react-use-googlelogin';
+
 
 const GoogleAuthContext = React.createContext()
 
 export const GoogleAuthProvider = ({ children }) => {
     const GOOGLE_CLIENT_ID = '117400138061-qmmhcm296ol3tqa2tc0eq60a5j553c27.apps.googleusercontent.com'
-  const googleAuth = useGoogleLogin({
+    
+    const googleAuth = useGoogleLogin({
     clientId: GOOGLE_CLIENT_ID, // Your clientID from Google.
-  })
-
+    isSignedIn: true
+    })
+         
   return (
     <GoogleAuthContext.Provider value={googleAuth}>
       {children}

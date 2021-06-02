@@ -100,7 +100,7 @@
 }
 
 .cart table thead {
-  background-color: #9026AB;
+  background-color: #fff;
   display: table-header-group;
   color: #fff;
 }
@@ -154,11 +154,12 @@
   margin-right: .25rem;
   font-size: 1rem;
   font-weight: normal;
-  border: solid 1px #ccc;
+  border: 1px solid gainsboro;
 }
 
 .cart__table__number button:hover {
-  background-color: #d8d7d7;
+  background-color: gray !important;
+  color: #fff;
 }
 
 .cart__table__number--increment {
@@ -189,12 +190,13 @@
   width: 75px;
   height: 35px;
   border-radius: 10px;
-  background-color: #9026AB;
-  border: none;
+  background-color: #fff;
+  border: 1px solid gainsboro;
 }
 
 .cart__table--delete button:hover {
-  background-color: #9026AB;
+  background-color: gray;
+  color: #fff;
 }
 
 .cart__table--delete:hover {
@@ -261,8 +263,8 @@
   color: #fff;
   font-weight: normal;
   border-radius: .2rem;
-  background: -webkit-gradient(linear, left top, right top, from(#A945BB), to(#9026AB));
-  background: linear-gradient(to right, #A945BB, #9026AB);
+  background: -webkit-gradient(linear, left top, right top, from(#918f92), to(#6d6a6d));
+  background: linear-gradient(to right, #918f92, #6d6a6d);
   width: 95%;
   padding: 1.5rem 1rem;
   text-align: left;
@@ -280,27 +282,29 @@
 
 .orderContainer .order button {
   height: 38px;
-  color: #fff;
-  background-color: #9026AB !important;
-  border: none;
+  color: #000;
+  background-color: #fff !important;
+  border: 1px solid gainsboro;
 }
 
 .orderContainer .order button:hover {
-  background-color: #c268d9 !important;
+  background-color: gray !important;
+  color: #fff;
 }
 
 .orderContainer .order a {
   position: absolute;
   font-size: 1rem;
-  background-color: #9026AB !important;
+  background-color: #fff !important;
   padding: 9.5px 10px;
-  color: #fff;
+  color: #000;
+  border: 1px solid gainsboro;
   border-radius: 5px;
   margin-left: 10px;
 }
 
 .orderContainer .order a:hover {
-  background-color: #c268d9 !important;
+  background-color: gray !important;
   text-decoration: none;
   color: #fff;
 }

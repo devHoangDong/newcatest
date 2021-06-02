@@ -16,9 +16,7 @@
 
 .leftSidebar {
   width: 100%;
-  background-color: grey;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("https://w.ladicdn.com/s950x750/601243fdc1b48f0011063665/newca-chuyen-doi-fastca-900x603-fb-post-2021-20210304101354.png");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://w.ladicdn.com/s950x750/601243fdc1b48f0011063665/newca-chuyen-doi-fastca-900x603-fb-post-2021-20210304101354.png");
+  background-color: rgba(128, 128, 128, 0.75);
   background-position: center;
   background-size: contain;
   height: 100vh;
@@ -34,6 +32,10 @@
   color: #fff;
   text-align: center;
   padding: 1rem 0;
+}
+
+.homePage p {
+  color: #fff;
 }
 
 .leftSidebar hr {
@@ -70,7 +72,7 @@
   display: none;
   visibility: hidden;
   line-height: 2rem;
-  background-color: #812399;
+  background-color: gainsboro;
 }
 
 .menusub-list a {
@@ -80,12 +82,12 @@
 }
 
 .menusub-list li:hover {
-  color: #812399;
+  color: gainsboro;
   background-color: #fff;
 }
 
 .menusub-list li:hover a {
-  color: #812399;
+  color: #000;
 }
 
 .userDashboard {
@@ -100,7 +102,8 @@
 
 .menusub:hover {
   cursor: pointer;
-  background-color: #812399;
+  background-color: gainsboro;
+  color: #000;
 }
 
 .menusub:hover .menusub-list {

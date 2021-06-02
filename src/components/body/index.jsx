@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../scss/body.scss'
 import PageLoading from './FullpageLoading';
-import router from '../../routes/router';
+import router from '../../router';
 import {
   BrowserRouter as Router,
   Switch,

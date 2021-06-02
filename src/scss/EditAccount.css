@@ -33,8 +33,8 @@
   color: #fff;
   font-weight: normal;
   border-radius: .2rem;
-  background: -webkit-gradient(linear, left top, right top, from(#A945BB), to(#9026AB));
-  background: linear-gradient(to right, #A945BB, #9026AB);
+  background: -webkit-gradient(linear, left top, right top, from(#918f92), to(#6d6a6d));
+  background: linear-gradient(to right, #918f92, #6d6a6d);
   width: 95%;
   text-align: left;
   padding: .5rem 1rem;
@@ -50,12 +50,14 @@
 
 .editAccount__left .btnSubmit {
   border-radius: .75rem;
-  background-color: #9026AB !important;
+  background-color: #fff !important;
+  color: #000;
   cursor: pointer;
 }
 
 .editAccount__left .btnSubmit:hover {
-  background-color: #c268d9 !important;
+  background-color: gray !important;
+  color: #fff;
 }
 
 .editAccount__right {
@@ -103,11 +105,13 @@
   border: none;
   border-radius: 10px;
   color: #fff;
-  background-color: #9026AB;
+  background-color: #fff !important;
+  color: #000;
 }
 
 .editAccount__right--btn button:hover {
-  background-color: #c268d9;
+  background-color: gray !important;
+  color: #fff;
 }
 
 @media only screen and (min-device-width: 600px) {

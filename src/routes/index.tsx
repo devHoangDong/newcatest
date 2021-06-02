@@ -6,13 +6,15 @@ import PrivateRoute from './PrivateRoute';
 import Login from './Login';
 
 export const AppRouter = () => {
+  const loginToken = localStorage.getItem('userGG');
+  console.log(loginToken)
+  
   return (
     <Router>
-      <Redirect exact from="/" to="/login" />
-      <PrivateRoute path="/home" component={Home} />                
-      <Login path="/login" component={LoginGG} />
-        {/* <Route exact path='/' component={LoginGG} /> 
-        <Route path="/home" component={Home} /> */}
+      {!loginToken && <Redirect exact from="/" to="/login" />}                
+      <PrivateRoute exact path="/" component={Home} /> 
+      <PrivateRoute path="/" component={Home} />             
+      <Login exact path="/login" component={LoginGG} />
     </Router>
   )
 }

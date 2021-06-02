@@ -2,6 +2,8 @@
   background-color: #fff;
   border-radius: 1rem;
   margin-top: 1rem;
+  overflow-y: auto;
+  max-height: 15rem;
 }
 
 .recentOrder__container .order {
@@ -49,7 +51,6 @@
 
 .recentOrder__container .order__content .user__name {
   display: inline-block;
-  position: absolute;
   height: 2rem;
 }
 

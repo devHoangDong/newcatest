@@ -7,16 +7,6 @@ import * as serviceWorker from './serviceWorker';
 import { GoogleAuthProvider } from './GoogleAuthen';
 
 
-
-const eventLogger = (event: unknown, error: unknown) => {
-  console.log('onKeycloakEvent', event, error)
-}
-
-const tokenLogger = (tokens: unknown) => {
-  console.log('onKeycloakTokens', tokens)
-  localStorage.setItem('keycloakTokens', JSON.stringify(tokens));
-}
-
 ReactDOM.render(
   <React.StrictMode>
       <GoogleAuthProvider>
