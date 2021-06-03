@@ -2,6 +2,7 @@ import React from 'react';
 import '../../scss/body.scss'
 import PageLoading from './FullpageLoading';
 import router from '../../router';
+import Home from './home/index'
 import {
   BrowserRouter as Router,
   Switch,
@@ -22,6 +23,7 @@ const Body = () => {
             )
           })
         }
+        <Route path="/" component={Home} />
       </Switch>
       <PageLoading />
     </div>
