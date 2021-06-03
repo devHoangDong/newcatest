@@ -63,13 +63,13 @@ function MyMenu({url, myst}) {
             </ul>
           </div>
           <div className="menusub">
-            <div className="menusub-title"><i class="fal fa-chart-network"></i>&nbsp;&nbsp;<p>Tiếp thị liên kết</p><span><i class="fal fa-chevron-down"></i></span></div>
+            <div className="menusub-title"><i class="fal fa-chart-network"></i>&nbsp;&nbsp;<p>Cộng tác viên NewCa</p><span><i class="fal fa-chevron-down"></i></span></div>
             <ul className="menusub-list">
               <li>
-                <Link to={`${url}/affiliate`}>Tài khoản affiliate</Link>
+                <Link to={`${url}/affiliate`}>Tài khoản CTV</Link>
               </li>
               <li>
-                <a href="#">Cấu hình affiliate</a>
+                <a href="#">Cấu hình tài khoản CTV</a>
               </li>
             </ul>
           </div>          

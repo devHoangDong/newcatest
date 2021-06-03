@@ -33,6 +33,26 @@ const Header = () => {
             <i className="fas fa-question-circle"></i>&nbsp;Hỗ trợ&nbsp;
         </Link>
       </div>
+    <div className="header__nav">
+        <Link to='/loyalty'>
+            <i className="fas fa-wallet"></i>&nbsp;Tích điểm&nbsp;
+        </Link>
+    </div>
+        <div className="header__nav">
+            <Link to='/loyalty'>
+            <i class="far fa-arrows-alt"></i>&nbsp;Gia hạn dịch vụ&nbsp;
+            </Link>
+        </div>
+        <div className="header__nav">
+            <Link to='/loyalty'>
+            <i class="fab fa-amazon-pay"></i>&nbsp;Thanh toán trực tuyến&nbsp;
+            </Link>
+        </div>
+        <div className="header__nav">
+            <Link to='/loyalty'>
+            <i class="fab fa-android"></i>&nbsp;Tiện ích&nbsp;
+            </Link>
+        </div>
     </div>
   );
 }

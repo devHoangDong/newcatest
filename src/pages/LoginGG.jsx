@@ -23,11 +23,6 @@ export default function LoginGG() {
                         <div className={`${s.fadeIn} ${s.first}`}>
                         </div>
                         {/* Login Form */}
-                        <form>
-                        <input type="text" id="login" className={`${s.fadeIn} ${s.second}`} name="login" placeholder="login" />
-                        <input type="text" id="password" className={`${s.fadeIn} ${s.third}`} name="login" placeholder="password" />
-                        <input type="submit" className={`${s.fadeIn} ${s.fourth}`} Value="Log In" />
-                        </form>
                         <div id={s.formFooter}>
                             <button onClick={handleSignIn}><i class="fab fa-google"></i> Log In with Google</button>
                         </div>
