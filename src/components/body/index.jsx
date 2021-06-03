@@ -2,11 +2,7 @@ import React from 'react';
 import '../../scss/body.scss'
 import PageLoading from './FullpageLoading';
 import router from '../../router';
-<<<<<<< Updated upstream
-import Home from './home/index'
-=======
 import Home from './home/index';
->>>>>>> Stashed changes
 import {
   BrowserRouter as Router,
   Switch,
@@ -27,11 +23,7 @@ const Body = () => {
             )
           })
         }
-<<<<<<< Updated upstream
-        <Route path="/" component={Home} />
-=======
         <Route path ="/" component={Home} />
->>>>>>> Stashed changes
       </Switch>
       <PageLoading />
     </div>
