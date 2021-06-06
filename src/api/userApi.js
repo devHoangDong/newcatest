@@ -2,7 +2,7 @@ import apiClient from './apiClient'
 import axios from 'axios'
 const userApi = {
   getUsers:(params) => {
-    const url = '/getUserInfo'
+    const url = '/'
     return apiClient.get(url, {params})
   },
   editUser: (params) => {
