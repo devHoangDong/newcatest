@@ -8,7 +8,7 @@ const CaptchaGG = ({ onChange }) => {
         <div>
             <ReCAPTCHA
                 sitekey="6LdVQB4bAAAAAALFZT1WkU9IgcgO0yNb1btSo2uA"
-                onloadCallback={onChange}
+                onChange={onChange}
                 verifyCallback={onChange}
             />
         </div>
