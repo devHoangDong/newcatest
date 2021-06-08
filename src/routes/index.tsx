@@ -11,11 +11,11 @@ export const AppRouter = () => {
   
   return (
     <Router>
-      {!loginToken && <Redirect exact from="/" to="/login" />}
-      <Switch>             
-      <PrivateRoute exact path="/" component={Home} /> 
-      <PrivateRoute path="/" component={Home} />
-      </Switch>                
+      {!loginToken && <Redirect exact from="/" to="/login" />}                
+        <Switch>
+            <PrivateRoute exact path="/" component={Home} />
+            <PrivateRoute path="/" component={Home} />
+        </Switch>
       <Login exact path="/login" component={LoginGG} />
     </Router>
   )

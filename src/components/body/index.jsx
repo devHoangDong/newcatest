@@ -8,10 +8,12 @@ import {
   Switch,
   Route
 } from "react-router-dom"
+import TopNav from './home/topNav';
 
 const Body = () => {
   return (
     <div className="myBody">
+      <TopNav />
       <Switch>
         {
           router.map((item, index) => {
@@ -23,7 +25,7 @@ const Body = () => {
             )
           })
         }
-        <Route path ="/" component={Home} />
+        <Route path="/" component={Home} />
       </Switch>
       <PageLoading />
     </div>

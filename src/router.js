@@ -2,6 +2,8 @@ import Account from './components/body/account/index';
 import Home from './components/body/home/index';
 import Dathang from './components/dathang/index';
 import ListItem from './components/body/home/ListItem';
+import ServiceSearch from './components/body/search/ServiceSearch';
+import Register from './components/body/request/Register';
 import Cart from './components/body/cart/index';
 import HelpDesk from './components/body/helpdesk/index';
 import Affiliate from './components/body/account/content/affiliate/showAffiliate';
@@ -11,6 +13,8 @@ import PurchaseOrder from './components/body/account/content/PurchaseOrder';
 const router = [
   {path: '/', exact: true, Component: Home},
   {path: '/home', exact: true, Component: Home},
+  {path: '/search', exact: true, Component: ServiceSearch},
+  {path: '/request', exact: true, Component: Register},
   {path: '/account', exact: true, Component: Account},
   {path: '/account/affiliate', exact: true, Component: Affiliate},
   {path: '/account/editAccount', exact: true, Component: EditAccount},

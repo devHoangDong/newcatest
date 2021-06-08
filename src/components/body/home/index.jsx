@@ -11,7 +11,6 @@ const Home = () => {
 
   return (
     <div>
-      <TopNav />
       <div className="homePage__container">
         <div className="chart1__container">
           <ChartOne />

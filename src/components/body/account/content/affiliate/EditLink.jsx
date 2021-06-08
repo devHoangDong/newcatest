@@ -13,12 +13,12 @@ const optionsSelection = [
   { label: 'khác', value: 'khac' },
 ];
 const EditLink = () => {
-  const initialLink = 'http://portal.newca.vn/affiliate/'
+  const initialLink = 'https://newca.vn/affiliate/'
   const dispatch = useDispatch()
   const [user, setUser] = useState(null)
   const [valueSelect, setValueSelect] = useState('')
   const [inputSelect, setInputSelect] = useState('')
-  const [valueLink, setValueLink] = useState('http://portal.newca.vn/affiliate/')
+  const [valueLink, setValueLink] = useState('https://newca.vn/affiliate/')
   const state = { value: "" };
   const fetchApi = async () => {
     const params = {

@@ -10,25 +10,39 @@ export default function LoginGG() {
         signIn();
         const googleUser = await signIn();
         if (googleUser) {
-        localStorage.setItem('userGG', JSON.stringify(googleUser.accessToken));
-        console.log(googleUser)}
+            localStorage.setItem('userGG', JSON.stringify(googleUser.accessToken));
+            console.log(googleUser)
+        }
     }
-    
-           return (
-                <div className={`${s.wrapper} ${s.fadeInDown}`}>
-                    <div id={s.formContent}>
-                        {/* Tabs Titles */}
-                        <h2 className={s.active}> Sign In </h2>
-                        {/* Icon */}
-                        <div className={`${s.fadeIn} ${s.first}`}>
+
+    return (
+        <div className={s.loginContainer}>
+            <div className={s.loginContainer__head}>
+                <h2>Newca</h2>
+            </div>
+            <div className={s.loginContainer__body}>
+                <div className={s.loginContainer__body__right}>
+                    <div className={s.imgCover}>
+                        <img src="./image/newca.jpg"></img>
+                    </div>
+                </div>
+                <div className={s.loginContainer__body__left}>
+                    <div className={s.leftContainer}>
+                        <div className={s.leftTitle}>
+                            <h4>Hello</h4>
                         </div>
-                        {/* Login Form */}
-                        <div id={s.formFooter}>
-                            <button onClick={handleSignIn}><i class="fab fa-google"></i> Log In with Google</button>
+                        <div className={`${s.wrapper} ${s.fadeInDown}`}>
+                            <div className={`${s.fadeIn} ${s.first}`}>
+                                <button onClick={handleSignIn}><i class="fab fa-google"></i> Log In with Google</button>
+                            </div>
+                            <div className={`${s.fadeIn} ${s.first}`}>
+                                <button type="button"><i class="fab fa-google"></i> Log In with KC</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-           )
+            </div>
+        </div>
+    )
 }
 
-   

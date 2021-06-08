@@ -14,19 +14,11 @@ const EditAccount = () => {
   const dispatch = useDispatch()
 
   const fetchApi = async () => {
-    var requestOptions = {
-      method: 'GET',
-      redirect: 'follow'
-    };
-
-    fetch("https://newca-api.herokuapp.com/api/user?&name=Hien", requestOptions)
-      .then(response => response.json())
-      .then(result => {
-        const userinfo = result[0]
-        setUser(userinfo);
-        console.log(user)
-      })
-      .catch(error => console.log('error', error));
+    const params = {
+      email: "mr.tiennv@gmail.com"
+    }
+    const response = await userApi.getUsers(params)
+    setUser(response)
   }
 
   useEffect(() => {

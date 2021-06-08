@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import * as React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import './scss/fonts.css'
 import { AppRouter } from './routes';
 import * as serviceWorker from './serviceWorker';
 import { GoogleAuthProvider } from './GoogleAuthen';
@@ -9,9 +10,9 @@ import { GoogleAuthProvider } from './GoogleAuthen';
 
 ReactDOM.render(
   <React.StrictMode>
-      <GoogleAuthProvider>
-        <AppRouter />
-      </GoogleAuthProvider>
+    <GoogleAuthProvider>
+      <AppRouter />
+    </GoogleAuthProvider>
   </React.StrictMode>,
   document.getElementById('root')
 )
