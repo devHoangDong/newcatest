@@ -14,19 +14,21 @@ const Body = () => {
   return (
     <div className="myBody">
       <TopNav />
-      <Switch>
-        {
-          router.map((item, index) => {
-            const { Component } = item
-            return (
-              <Route path={item.path} exact={item.exact} key={index}>
-                <Component />
-              </Route>
-            )
-          })
-        }
-        <Route path="/" component={Home} />
-      </Switch>
+      <Router>
+        <Switch>
+          {
+            router.map((item, index) => {
+              const { Component } = item
+              return (
+                <Route path={item.path} exact={item.exact} key={index}>
+                  <Component />
+                </Route>
+              )
+            })
+          }
+          <Route path="/" component={Home} />
+        </Switch>
+      </Router>
       <PageLoading />
     </div>
   )
