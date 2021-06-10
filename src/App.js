@@ -17,7 +17,7 @@ import Account from './components/body/account/index'
 
 const App = () => {
   return (
-    <Router basename="/newcatest.netlify.app">
+    <Router>
       <div className="bodyContainer">
         <Header/>
         <Body/>
