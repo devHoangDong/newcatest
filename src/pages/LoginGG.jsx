@@ -18,7 +18,8 @@ export default function LoginGG() {
     const tokenSignIn = async () => {
         const tokenUrl = 'https://logintoken.up.newca.vn/';
         const response = await userApi.callOtherApi(tokenUrl, {})
-        console.log(response);
+        const result = response.json();
+        console.log(result);
     }
 
     return (
