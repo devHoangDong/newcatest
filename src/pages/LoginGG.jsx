@@ -2,6 +2,7 @@ import axios from 'axios';
 import React from 'react';
 import { useGoogleAuth } from '../GoogleAuthen/index';
 import s from './LoginGG.module.scss';
+import userApi from '../api/userApi';
 
 export default function LoginGG() {
     const { signIn } = useGoogleAuth();
@@ -13,6 +14,11 @@ export default function LoginGG() {
             localStorage.setItem('userGG', JSON.stringify(googleUser.accessToken));
             console.log(googleUser)
         }
+    }
+    const tokenSignIn = async () => {
+        const tokenUrl = 'https://logintoken.up.newca.vn/';
+        const response = await userApi.callOtherApi(tokenUrl, {})
+        console.log(response);
     }
 
     return (
@@ -36,7 +42,7 @@ export default function LoginGG() {
                                 <button onClick={handleSignIn}><i class="fab fa-google"></i> Log In with Google</button>
                             </div>
                             <div className={`${s.fadeIn} ${s.first}`}>
-                                <button type="button"><i class="fab fa-google"></i> Log In with KC</button>
+                                <button type="button" onClick={tokenSignIn}><i class="fab fa-google"></i> Log In with KC</button>
                             </div>
                         </div>
                     </div>

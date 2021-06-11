@@ -2,16 +2,16 @@ import React from 'react';
 import { Card } from 'antd';
 import '../../../scss/ProjectItem.scss';
 import { useDispatch } from 'react-redux';
-import {addCart as addCartAction} from '../../../redux/action/Cartaction'
+import { addCart } from '../../../redux/counterSlice'
 
 
 
-const ProductItem = ({dataItem}) => {
+const ProductItem = ({ dataItem }) => {
   console.log(dataItem);
   const dispatch = useDispatch()
 
   const addproduct = () => {
-    dispatch(addCartAction(dataItem))
+    dispatch(addCart(dataItem))
   }
   return (
     <div className="productItem">
@@ -19,7 +19,7 @@ const ProductItem = ({dataItem}) => {
         hoverable
         cover={<img alt="example" src='https://chukysonewca.info/wp-content/uploads/2020/09/newcas.png'
         />}
-        style={{ backgroundColor: '#FEF9F7', padding: 0 }} 
+        style={{ backgroundColor: '#FEF9F7', padding: 0 }}
       >
         <div className="productItem__footer">
           <div className="productItem__footer--title">

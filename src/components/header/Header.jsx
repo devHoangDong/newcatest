@@ -25,37 +25,37 @@ const Header = () => {
       <div className="header__nav"><Link to='/search'><i class="far fa-search"></i>&nbsp;Tra cứu dịch vụ</Link></div>
       <div className="header__nav"><Link to='/search'><i class="fas fa-shopping-bag"></i>&nbsp;Sản phẩm</Link></div>
       <div className="header__nav"><Link to='/request'><i class="fal fa-handshake"></i>&nbsp;Yêu cầu dịch vụ</Link></div>
-      {/* <div className="header__nav"><Link to='/account'><i class="fal fa-user-circle"></i>&nbsp;Account</Link></div> */}
-      {/* <div className="header__nav">
+      <div className="header__nav"><Link to='/account'><i class="fal fa-user-circle"></i>&nbsp;Account</Link></div>
+      <div className="header__nav">
         <Link to='/cart'><i class="far fa-shopping-cart"></i>&nbsp;Giỏ hàng&nbsp;
                 <span className="icon-cart bg-color white total_items">{listCart ? listCart.length : '0'}</span>
         </Link>
-      </div> */}
+      </div>
       <div className="header__nav">
         <Link to='/help'>
           <i className="fas fa-question-circle"></i>&nbsp;Hỗ trợ&nbsp;
         </Link>
       </div>
-      {/* <div className="header__nav">
+      <div className="header__nav">
         <Link to='/loyalty'>
           <i className="fas fa-wallet"></i>&nbsp;Tích điểm&nbsp;
         </Link>
-      </div> */}
-      {/* <div className="header__nav">
+      </div>
+      <div className="header__nav">
         <Link to='/loyalty'>
           <i className="fas fa-arrows-alt">&nbsp;Gia hạn dịch vụ&nbsp;</i>
         </Link>
-      </div> */}
-      {/* <div className="header__nav">
+      </div>
+      <div className="header__nav">
         <Link to='/loyalty'>
           <i className="fab fa-amazon-pay">&nbsp;Thanh toán trực tuyến&nbsp;</i>
         </Link>
-      </div> */}
-      {/* <div className="header__nav">
+      </div>
+      <div className="header__nav">
         <Link to='/loyalty'>
           <i className="fab fa-android">&nbsp;Tiện ích&nbsp;</i>
         </Link>
-      </div> */}
+      </div>
     </div>
   );
 }

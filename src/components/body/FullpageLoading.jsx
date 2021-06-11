@@ -4,9 +4,9 @@ import { BoxLoading } from 'react-loadingg';
 import { useSelector } from 'react-redux';
 
 const FullPageLoading = () => {
-  const loading = useSelector(store => store.loading.isLoading)
+  // const loading = useSelector(store => store.loading.isLoading)
   return (
-    <div className="pageLoading" style={{display: loading ? 'block' : 'none'}}>
+    <div className="pageLoading" style={{ display: 'none' }}>
       <BoxLoading />
     </div>
   )
