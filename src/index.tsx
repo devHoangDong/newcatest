@@ -6,13 +6,17 @@ import './scss/fonts.css'
 import { AppRouter } from './routes';
 import * as serviceWorker from './serviceWorker';
 import { GoogleAuthProvider } from './GoogleAuthen';
+import { useSelector, Provider } from 'react-redux';
+import store from './redux/store';
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <GoogleAuthProvider>
-      <AppRouter />
-    </GoogleAuthProvider>
+    <Provider store={store}>
+      <GoogleAuthProvider>
+        <AppRouter />
+      </GoogleAuthProvider>
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 )

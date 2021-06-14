@@ -8,9 +8,11 @@ import Affiliate from '../components/body/account/content/affiliate/showAffiliat
 import EditAccount from '../components/body/account/content/EditAccount';
 import EditPassword from '../components/body/account/content/EditPassword';
 import PurchaseOrder from '../components/body/account/content/PurchaseOrder';
+import LoginGG from '../pages/LoginGG';
 const router = [
   {path: '/', exact: true, Component: Home},
   {path: '/home', exact: true, Component: Home},
+  {path: '/login', exact: true, Component: LoginGG},
   {path: '/account', exact: true, Component: Account},
   {path: '/account/affiliate', exact: true, Component: Affiliate},
   {path: '/account/editAccount', exact: true, Component: EditAccount},

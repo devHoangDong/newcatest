@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Card, Button, Modal, Form, Input } from 'antd';
 import '../../../../../scss/affiliateProfile.scss';
 import InfoBank from '../../../../../api/infoBank';
-import { setLoading as setLoadingAction } from '../../../../../redux/action/userAction'
+import { setLoading as setLoadingAction } from '../../../../../redux/loadingSlice'
 import { useDispatch } from 'react-redux';
 
 const Profile = () => {
@@ -63,9 +63,9 @@ const Profile = () => {
       <Card
         title="Thông Tin Ngân Hàng "
         extra={<Button type="primary"
-        style={{ width: 100, borderRadius: 10 }}
-        onClick={showModal}
-      >sửa</Button>} >
+          style={{ width: 100, borderRadius: 10 }}
+          onClick={showModal}
+        >sửa</Button>} >
         {infoBank && (
           <div className="profileBank__content">
             <p><i className="fas fa-university"></i> Ngân hàng: <span>{infoBank.bank_name}</span></p>
@@ -85,7 +85,7 @@ const Profile = () => {
                 rules={[{ required: true, message: 'Please input your username!' }]}
               >
                 <label><i className="fas fa-university"></i> Tên ngân hàng</label>
-                <Input name="bank_name" onChange={changeFormEdit} value={infoBank.bank_name}/>
+                <Input name="bank_name" onChange={changeFormEdit} value={infoBank.bank_name} />
               </Form.Item>
 
               <Form.Item
@@ -93,7 +93,7 @@ const Profile = () => {
                 rules={[{ required: true, message: 'Please input your password!' }]}
               >
                 <label><i className="fas fa-code-branch"></i> Chi nhánh </label>
-                <Input name="bank_branch" onChange={changeFormEdit} value={infoBank.bank_branch}/>
+                <Input name="bank_branch" onChange={changeFormEdit} value={infoBank.bank_branch} />
               </Form.Item>
 
               <Form.Item
@@ -101,7 +101,7 @@ const Profile = () => {
                 rules={[{ required: true, message: 'Please input your password!' }]}
               >
                 <label><i className="fas fa-user"></i> chủ tài khoản </label>
-                <Input name="bank_account" onChange={changeFormEdit} value={infoBank.bank_account}/>
+                <Input name="bank_account" onChange={changeFormEdit} value={infoBank.bank_account} />
               </Form.Item>
 
               <Form.Item
@@ -109,7 +109,7 @@ const Profile = () => {
                 rules={[{ required: true, message: 'Please input your password!' }]}
               >
                 <label><i className="fas fa-credit-card"></i> số tài khoản </label>
-                <Input name="bank_no" onChange={changeFormEdit} value={infoBank.bank_no}/>
+                <Input name="bank_no" onChange={changeFormEdit} value={infoBank.bank_no} />
               </Form.Item>
             </Form>
           )}

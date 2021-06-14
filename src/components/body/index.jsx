@@ -6,13 +6,15 @@ import Home from './home/index';
 import {
   BrowserRouter as Router,
   Switch,
-  Route
+  Route, useHistory
 } from "react-router-dom"
-import TopNav from './home/topNav';
+import TopNav from '../header/topNav';
 
 const Body = () => {
+
   return (
     <div className="myBody">
+
       <TopNav />
       <Switch>
         {

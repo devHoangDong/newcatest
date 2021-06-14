@@ -17,7 +17,7 @@ import Account from './components/body/account/index'
 
 const App = () => {
   return (
-    <HashRouter>
+    <Router>
       <div className="bodyContainer">
         <Header/>
         <Body/>
@@ -26,7 +26,7 @@ const App = () => {
       <BackTop>
         <div className="backTop"><i className="fas fa-arrow-up" style={{fontSize: '25px'}}></i></div>
       </BackTop>
-    </HashRouter>
+    </Router>
   );
 }
 

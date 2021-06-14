@@ -2,7 +2,7 @@ import React from 'react';
 import {Form, Input, Button, Checkbox} from 'antd';
 import '../../../scss/EditPassword.scss';
 import MyTitle from '../account/content/Title';
-import { setLoading as setLoadingAction } from '../../../redux/action/userAction';
+import { setLoading as setLoadingAction } from '../../../redux/loadingSlice';
 import { useDispatch } from 'react-redux';
 import userApi from "../../../api/userApi";
 const HelpDesk = () => {

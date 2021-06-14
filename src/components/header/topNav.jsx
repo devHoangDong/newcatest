@@ -1,17 +1,17 @@
 import { format } from 'date-fns'
-import '../../../scss/topnav.scss'
+import '../../scss/topnav.scss'
 import {
   BrowserRouter as Router, Link, Route, Switch, useRouteMatch
 } from 'react-router-dom';
 import * as React from 'react'
 import { useCallback } from 'react'
-import { useAxios } from '../../../utils/hooks'
-import { useGoogleAuth } from '../../../GoogleAuthen';
+import { useGoogleAuth } from '../../GoogleAuthen';
 import { useHistory } from "react-router-dom";
 import { Input, Space } from 'antd';
 import { AudioOutlined } from '@ant-design/icons';
 import { useSelector } from 'react-redux';
-
+import { useDispatch } from 'react-redux';
+import { setLogin } from '../../redux/loginSlice';
 
 
 const { Search } = Input;
@@ -28,8 +28,11 @@ const suffix = (
 const onSearch = value => console.log(value);
 
 const d = format(new Date(), 'do MMMM yyyy')
+
 export default function TopNav() {
+
   const history = useHistory();
+  const dispatch = useDispatch()
   const EditAccount = () => {
     history.push('/account/editAccount')
   }
@@ -43,19 +46,27 @@ export default function TopNav() {
     history.push('/account/editPassword')
   }
   const { signOut } = useGoogleAuth();
-  const { googleUser } = useGoogleAuth();
+
   let username = '';
   let avatar = '';
-  if (googleUser) {
-    username = `${googleUser.profileObj.givenName} ${googleUser.profileObj.familyName}`;
-    avatar = googleUser.profileObj.imageUrl;
+  const userGG = JSON.parse(localStorage.getItem('userGG'));
+  const userToken = JSON.parse(localStorage.getItem('userToken'));
+  if (userGG) {
+    username = `${userGG.profileObj.givenName} ${userGG.profileObj.familyName}`;
+    avatar = userGG.profileObj.imageUrl;
+  } else {
+    if (userToken) {
+      username = userToken.name;
+      avatar = 'http://simpleicon.com/wp-content/uploads/user1.svg'
+    }
   }
+
   const handleSignOut = () => {
-    // signOut();
+    signOut();
+    dispatch(setLogin({ logged: false }))
     localStorage.clear();
-    history.push("/login")
   }
-  console.log(googleUser)
+
   const listCart = useSelector(store => store.Cart)
   return (
     <div className="topNav">
@@ -76,13 +87,12 @@ export default function TopNav() {
               <p onClick={() => ""}>Tích điểm</p>
               <p onClick={() => EditPassword()}>Đơn yêu cầu của tôi</p>
               <p onClick={() => handleSignOut()}>
-                <Link to={"/login"} >Đăng xuất</Link>
-
-              </p>
+                Đăng xuất
+                      </p>
             </div>
           </div>
           <div className="userAvatar">
-            <img src={avatar} alt="logo-mini"></img>
+            <img src={avatar} alt="ava"></img>
           </div>
         </div>
       </div>

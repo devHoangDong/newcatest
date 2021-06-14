@@ -3,7 +3,7 @@ import { message, Input, Button, Radio } from 'antd';
 import '../../../../../scss/editLink.scss';
 import userApi from '../../../../../api/userApi';
 import affiliateApi from '../../../../../api/affiliateApi';
-import { setLoading as setLoadingAction } from '../../../../../redux/action/userAction'
+import { setLoading } from '../../../../../redux/loadingSlice'
 import { useDispatch } from 'react-redux';
 
 
@@ -50,9 +50,9 @@ const EditLink = () => {
   }
   const saveEdit = async () => {
     setValueLink(initialLink + inputSelect)
-    dispatch(setLoadingAction(true))
+    dispatch(setLoading(true))
     setTimeout(() => {
-      dispatch(setLoadingAction(false))
+      dispatch(setLoading(false))
     }, 3000);
     let params = {}
     if (valueSelect === 'email') {

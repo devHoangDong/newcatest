@@ -4,7 +4,7 @@ import '../../../../scss/EditAccount.scss';
 import userApi from '../../../../api/userApi'
 import Button from '@material-ui/core/Button';
 import MyTitle from './Title';
-import { setLoading as setLoadingAction } from '../../../../redux/action/userAction';
+import { setLoading as setLoadingAction } from '../../../../redux/loadingSlice';
 import { useDispatch } from 'react-redux';
 
 const { Option } = Select;

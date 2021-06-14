@@ -2,26 +2,41 @@ import axios from 'axios';
 import React from 'react';
 import { useGoogleAuth } from '../GoogleAuthen/index';
 import s from './LoginGG.module.scss';
-import userApi from '../api/userApi';
+import userApi from "../api/userApi";
+import { useDispatch } from 'react-redux';
+import { setLogin } from '../redux/loginSlice';
 
 export default function LoginGG() {
+
     const { signIn } = useGoogleAuth();
-    console.log(useGoogleAuth())
+    const dispatch = useDispatch()
+
     const handleSignIn = async () => {
         signIn();
         const googleUser = await signIn();
         if (googleUser) {
-            localStorage.setItem('userGG', JSON.stringify(googleUser.accessToken));
-            console.log(googleUser)
+            localStorage.setItem('userGG', JSON.stringify(googleUser));
         }
+        if (googleUser) { dispatch(setLogin({ logged: true })) };
     }
     const tokenSignIn = async () => {
-        const tokenUrl = 'https://logintoken.up.newca.vn/';
-        const response = await userApi.callOtherApi(tokenUrl, {})
-        const result = response.json();
-        console.log(result);
-    }
+        let user = null;
+        var requestOptions = {
+            method: 'GET',
+            credentials: 'include',
+            redirect: 'follow'
+        };
 
+        await fetch("https://logintoken.up.newca.vn/", requestOptions)
+            .then(response => response.json())
+            .then(result => {
+                user = (result)
+                localStorage.setItem('userToken', user);
+            })
+            .catch(error => console.log('error', error));
+        if (user) { dispatch(setLogin({ logged: true })) }
+
+    }
     return (
         <div className={s.loginContainer}>
             <div className={s.loginContainer__head}>
@@ -36,14 +51,15 @@ export default function LoginGG() {
                 <div className={s.loginContainer__body__left}>
                     <div className={s.leftContainer}>
                         <div className={s.leftTitle}>
-                            <h4>Hello</h4>
+                            <h4>Xin chào, hãy vui lòng đăng nhập</h4>
                         </div>
                         <div className={`${s.wrapper} ${s.fadeInDown}`}>
                             <div className={`${s.fadeIn} ${s.first}`}>
-                                <button onClick={handleSignIn}><i class="fab fa-google"></i> Log In with Google</button>
+                                <button onClick={handleSignIn}><i className="fab fa-google"></i> Đăng nhập bằng Google
+                                </button>
                             </div>
                             <div className={`${s.fadeIn} ${s.first}`}>
-                                <button type="button" onClick={tokenSignIn}><i class="fab fa-google"></i> Log In with KC</button>
+                                <button type="button" onClick={tokenSignIn}><i className="fab fa-google"></i> Đăng nhập bằng Token</button>
                             </div>
                         </div>
                     </div>

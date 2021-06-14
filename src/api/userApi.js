@@ -22,7 +22,7 @@ const userApi = {
         'Access-Control-Allow-Methods':'GET,PUT,POST,DELETE,PATCH,OPTIONS',
       }
     });
-    instance.post(url,params)
+    instance.get(url,params)
         .then(function (response) {
           return response;
         })

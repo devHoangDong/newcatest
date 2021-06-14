@@ -1,18 +1,17 @@
 import React from 'react';
-import {Route, Redirect} from 'react-router-dom';
+import { Route, Redirect, useHistory, history } from 'react-router-dom';
 import { useGoogleAuth } from "../GoogleAuthen";
+import { useSelector } from 'react-redux';
+const PrivateRoute = ({ component: Component, ...rest }) => {
 
-const PrivateRoute = ({component: Component, ...rest}) => {
+    const loginState = useSelector(store => store.isLogin)
 
-    const { isSignedIn } = useGoogleAuth();
-    const loginToken = localStorage.getItem('userGG');
-    
     return (
         <div>
             <Route {...rest} render={props => (
-                loginToken ?
-                (<Component {...props} />) : 
-                <Redirect to="/login" />
+                loginState ?
+                    (<Component {...props} />) :
+                    <Redirect to="/login" />
             )} />
         </div>
     );

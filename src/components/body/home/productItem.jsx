@@ -2,7 +2,7 @@ import React from 'react';
 import { Card } from 'antd';
 import '../../../scss/ProjectItem.scss';
 import { useDispatch } from 'react-redux';
-import { addCart } from '../../../redux/counterSlice'
+import { addCart } from '../../../redux/cartSlice'
 
 
 
